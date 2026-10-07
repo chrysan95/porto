@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" href="assets/images/logo.png">
+  <title>Chelsea Alanna Fakhira  &middot; Portfolio 2026</title>
+  <meta name="description" content="Portfolio of Chelsea Alanna Fakhira, Computer Science (Cloud Computing), BINUS University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Red diagonal band (grows into the About background) -->
+  <div class="bg" aria-hidden="true">
+    <div class="band" id="band"><div class="band-light" id="bandLight"></div></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <nav aria-label="Main">
+      <a href="#about">about me</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="stage" id="stage">
+
+        <img class="year" id="year" src="assets/images/2026.png" alt="2026" data-ph="assets/images/2026.png">
+
+        <div class="env-wrap" id="envWrap">
+          <div class="env-shadow"><div class="env-shadow-shape" id="envShadow"></div></div>
+          <div class="env-hit" id="envHit" role="button" tabindex="0" aria-label="Envelope. Drag to rotate, press Enter to open.">
+            <div class="env" id="env">
+              <div class="face back-out"></div>
+              <div class="face back-in"></div>
+              <div class="edge edge-l"></div>
+              <div class="edge edge-r"></div>
+              <div class="edge edge-t" id="edgeTop"></div>
+              <div class="edge edge-b"></div>
+
+              <div class="letter letter-paper" id="sceneLetter">
+                <img class="letter-img" alt="">
+                <span class="ph">assets/files/secret-file.pdf</span>
+              </div>
+
+              <div class="face pocket"><div class="pocket-skin"><div class="sheen"></div></div></div>
+
+              <div class="flap" id="flap">
+                <div class="flap-face flap-out"><div class="sheen"></div></div>
+                <div class="flap-face flap-in"></div>
+                <div class="seal" id="seal">
+                  <img class="seal-half seal-l" alt="" draggable="false">
+                  <img class="seal-half seal-r" alt="" draggable="false">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img class="title" id="title" src="assets/images/portfolio.png" alt="Portfolio" data-ph="assets/images/portfolio.png">
+
+        <p class="hint" id="hint">Drag to turn it around. Scroll or tap to open.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-grid">
+        <a class="letter-slot" id="letterSlot" href="assets/files/secret-file.pdf" target="_blank" rel="noopener" aria-label="Open the full file (PDF)">
+          <div class="letter-paper" id="slotPaper">
+            <img class="letter-img" alt="Totally super secret file">
+            <span class="ph">assets/files/secret-file.pdf</span>
+          </div>
+        </a>
+
+        <div class="about-copy">
+          <h1 class="hello">Hello!</h1>
+          <p class="intro">My name is Chelsea Alanna Fakhira and I’m currently majoring Computer Science with a focus on Cloud Computing. 
+            I am experienced in mentoring peers, boosting organizational engagement, and coordinating large-scale technical events with high adaptability
+             and a passion for learning and designing.</p>
+          <p class="more">For more information kindly click below</p>
+          <div class="cta">
+            <span class="arrows arrows-l" aria-hidden="true"><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></span>
+            <a class="btn" href="assets/files/Chelsea Alanna Fakhira_CV.pdf" download>DOWNLOAD CV</a>
+            <span class="arrows arrows-r" aria-hidden="true"><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="exp" id="experience" style="--n:5">
+      <div class="exp-pin">
+        <img class="thread thread-exp" src="assets/images/thread-experience.png" alt="experience" data-ph="assets/images/thread-experience.png">
+        <div class="exp-body">
+          <div class="timeline" id="timeline">
+          <button class="tl-seg" type="button" data-i="0" aria-label="Human Resource Development Staff, BNCC (Bina Nusantara Computer Club)"></button>
+          <button class="tl-seg" type="button" data-i="1" aria-label="Duta Binusian Scholarship Awardee, Bina Nusantara University"></button>
+          <button class="tl-seg" type="button" data-i="2" aria-label="Events and Logistics Co-Coordinator, TechnoScape 2026"></button>
+          <button class="tl-seg" type="button" data-i="3" aria-label="Publication and Registration Staff, TechDive 2026"></button>
+          <button class="tl-seg" type="button" data-i="4" aria-label="Freshmen Leader, Bina Nusantara University"></button>
+          </div>
+          <div class="exp-items">
+          <article class="exp-item is-active" data-i="0">
+            <div class="exp-text">
+              <h3 class="exp-role">Human Resource Development Staff</h3>
+              <p class="exp-org">BNCC (Bina Nusantara Computer Club)</p>
+              <p class="exp-date">Mar 2025 — Present</p>
+              <ul class="exp-list">
+                <li>Managed a soft skills improvement event with more than 20 activists as participants</li>
+                <li>Revamped the bonding program with more frequent team-building sessions, boosting activist-staff participation by 100%</li>
+              </ul>
+            </div>
+            <div class="gallery" data-gallery>
+              <div class="gallery-frame">
+                <figure class="slide"><img src="assets/images/experience/bncc-1.jpeg" alt="Human Resource Development Staff photo 1" loading="lazy" data-ph="assets/images/experience/bncc-1.jpg"></figure>
+                <figure class="slide"><img src="assets/images/experience/bncc-2.jpeg" alt="Human Resource Development Staff photo 2" loading="lazy" data-ph="assets/images/experience/bncc-2.jpg"></figure>
+                <figure class="slide"><img src="assets/images/experience/bncc-3.jpeg" alt="Human Resource Development Staff photo 3" loading="lazy" data-ph="assets/images/experience/bncc-3.jpg"></figure>
+              </div>
+              <div class="gallery-ctrl">
+                <button class="g-btn g-prev" type="button" aria-label="Previous photo">&lt;</button>
+                <div class="g-dots"></div>
+                <button class="g-btn g-next" type="button" aria-label="Next photo">&gt;</button>
+              </div>
+            </div>
+          </article>
+          <article class="exp-item" data-i="1">
+            <div class="exp-text">
+              <h3 class="exp-role">Duta Binusian Scholarship Awardee</h3>
+              <p class="exp-org">Bina Nusantara University</p>
+              <p class="exp-date">Feb 2026 — June 2026</p>
+              <ul class="exp-list">
+                <li>Targeted academic coaching for 6 mentees facing academic difficulties</li>
+                <li>Offering emotional support for 6 mentees having academic difficulties</li>
+                <li>Designed simplified learning breakdowns to help struggling students grasp complex subjects</li>
+              </ul>
+            </div>
+            <div class="gallery" data-gallery>
+              <div class="gallery-frame">
+                <figure class="slide"><img src="assets/images/experience/duta-binusian-1.jpeg" alt="Duta Binusian Scholarship Awardee photo 1" loading="lazy" data-ph="assets/images/experience/duta-binusian-1.jpg"></figure>
+                <figure class="slide"><img src="assets/images/experience/duta-binusian-2.jpeg" alt="Duta Binusian Scholarship Awardee photo 2" loading="lazy" data-ph="assets/images/experience/duta-binusian-2.jpg"></figure>
+              </div>
+              <div class="gallery-ctrl">
+                <button class="g-btn g-prev" type="button" aria-label="Previous photo">&lt;</button>
+                <div class="g-dots"></div>
+                <button class="g-btn g-next" type="button" aria-label="Next photo">&gt;</button>
+              </div>
+            </div>
+          </article>
+          <article class="exp-item" data-i="2">
+            <div class="exp-text">
+              <h3 class="exp-role">Events and Logistics Co-Coordinator</h3>
+              <p class="exp-org">TechnoScape 2026</p>
+              <p class="exp-date">Jan 2026 — May 2026</p>
+              <ul class="exp-list">
+                <li>Orchestrated pre-event rehearsals and created master briefings to ensure smooth logistical execution</li>
+                <li>Authored comprehensive SOPs, job descriptions, and timelines to guarantee total committee alignment</li>
+                <li>Collaborated with speakers to curate workshop topics and training materials aligned with TechnoScape&#x27;s goals</li>
+              </ul>
+            </div>
+            <div class="gallery" data-gallery>
+              <div class="gallery-frame">
+                <figure class="slide"><img src="assets/images/experience/technoscape-1.jpeg" alt="Events and Logistics Co-Coordinator photo 1" loading="lazy" data-ph="assets/images/experience/technoscape-1.jpg"></figure>
+                <figure class="slide"><img src="assets/images/experience/technoscape-2.png" alt="Events and Logistics Co-Coordinator photo 2" loading="lazy" data-ph="assets/images/experience/technoscape-2.jpg"></figure>
+              </div>
+              <div class="gallery-ctrl">
+                <button class="g-btn g-prev" type="button" aria-label="Previous photo">&lt;</button>
+                <div class="g-dots"></div>
+                <button class="g-btn g-next" type="button" aria-label="Next photo">&gt;</button>
+              </div>
+            </div>
+          </article>
+          <article class="exp-item" data-i="3">
+            <div class="exp-text">
+              <h3 class="exp-role">Publication and Registration Staff</h3>
+              <p class="exp-org">TechDive 2026</p>
+              <p class="exp-date">Jan 2026 — May 2026</p>
+              <ul class="exp-list">
+                <li>Authored comprehensive Co-produced promotional content with a 4-person team</li>
+                <li>Executed targeted social media campaigns, conceptualizing and writing promotional copy that guide users to the event registration</li>
+              </ul>
+            </div>
+            <div class="gallery" data-gallery>
+              <div class="gallery-frame">
+                <figure class="slide"><img src="assets/images/experience/techdive-1.jpg" alt="Publication and Registration Staff photo 1" loading="lazy" data-ph="assets/images/experience/techdive-1.jpg"></figure>
+              </div>
+              <div class="gallery-ctrl">
+                <button class="g-btn g-prev" type="button" aria-label="Previous photo">&lt;</button>
+                <div class="g-dots"></div>
+                <button class="g-btn g-next" type="button" aria-label="Next photo">&gt;</button>
+              </div>
+            </div>
+          </article>
+          <article class="exp-item" data-i="4">
+            <div class="exp-text">
+              <h3 class="exp-role">Freshmen Leader</h3>
+              <p class="exp-org">Bina Nusantara University</p>
+              <p class="exp-date">July 2025 — Sept 2025</p>
+              <ul class="exp-list">
+                <li>Directly handling 9 freshmen to help them during their introduction to campus</li>
+                <li>Facilitating a class of 47 freshmen cultural, academic, and social transition into university</li>
+              </ul>
+            </div>
+            <div class="gallery" data-gallery>
+              <div class="gallery-frame">
+                <figure class="slide"><img src="assets/images/experience/freshmen-leader-1.jpeg" alt="Freshmen Leader photo 1" loading="lazy" data-ph="assets/images/experience/freshmen-leader-1.jpg"></figure>
+                <figure class="slide"><img src="assets/images/experience/freshmen-leader-2.jpeg" alt="Freshmen Leader photo 2" loading="lazy" data-ph="assets/images/experience/freshmen-leader-2.jpg"></figure>
+              </div>
+              <div class="gallery-ctrl">
+                <button class="g-btn g-prev" type="button" aria-label="Previous photo">&lt;</button>
+                <div class="g-dots"></div>
+                <button class="g-btn g-next" type="button" aria-label="Next photo">&gt;</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="proj" id="projects">
+      <img class="thread thread-proj" src="assets/images/thread-projects.png" alt="projects" data-ph="assets/images/thread-projects.png">
+      <div class="tv-grid">
+        <a class="tv" href="#" target="_blank" rel="noopener" aria-label="Tech McRAE">
+          <div class="tv-screen"><img src="assets/images/projects/tech-mcrae.png" alt="Tech McRAE" data-ph="assets/images/projects/tech-mcrae.png"></div>
+        </a>
+        <a class="tv" href="#" target="_blank" rel="noopener" aria-label="Meningitis Risk Assessment">
+          <div class="tv-screen"><img src="assets/images/projects/meningitis-risk-assessment.png" alt="Meningitis Risk Assessment" data-ph="assets/images/projects/meningitis-risk-assessment.png"></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Letter while it travels from the envelope to the About section -->
+  <div class="fly-letter letter-paper" id="flyLetter" aria-hidden="true">
+    <img class="letter-img" alt="">
+    <span class="ph">assets/files/secret-file.pdf</span>
+  </div>
+
+</body>
+</html>
