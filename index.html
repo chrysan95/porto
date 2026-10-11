@@ -74,7 +74,9 @@
     <!-- ABOUT -->
     <section class="about" id="about">
       <div class="about-grid">
-        <a class="letter-slot" id="letterSlot" href="assets/files/secret-file.pdf" target="_blank" rel="noopener" aria-label="Open the full file (PDF)">
+        <a class="letter-slot" id="letterSlot" href="assets/files/secret-file.pdf" target="_blank" rel="noopener"
+          aria-label="Open the totally super secret file" aria-haspopup="dialog"
+          data-pdf="assets/files/secret-file.pdf">
           <div class="letter-paper" id="slotPaper">
             <img class="letter-img" alt="Totally super secret file">
             <span class="ph">assets/files/secret-file.pdf</span>
@@ -230,10 +232,14 @@
     <section class="proj" id="projects">
       <img class="thread thread-proj" src="assets/images/thread-projects.png" alt="projects" data-ph="assets/images/thread-projects.png">
       <div class="tv-grid">
-        <a class="tv" href="#" target="_blank" rel="noopener" aria-label="Tech McRAE">
-          <div class="tv-screen"><img src="assets/images/projects/tech-mcrae.png" alt="Tech McRAE" data-ph="assets/images/projects/tech-mcrae.png"></div>
+        <a class="tv" href="#" aria-label="Tech McRae — view slides" aria-haspopup="dialog"
+           data-title="Tech McRae"
+           data-pdf="assets/files/projects.pdf" data-pages="1-2">
+          <div class="tv-screen"><img src="assets/images/projects/tech-mcrae.png" alt="Tech McRae" data-ph="assets/images/projects/tech-mcrae.png"></div>
         </a>
-        <a class="tv" href="#" target="_blank" rel="noopener" aria-label="Meningitis Risk Assessment">
+        <a class="tv" href="#" aria-label="Meningitis Risk Assessment — view slides" aria-haspopup="dialog"
+           data-title="Meningitis Risk Assessment"
+           data-pdf="assets/files/projects.pdf" data-pages="3-4">
           <div class="tv-screen"><img src="assets/images/projects/meningitis-risk-assessment.png" alt="Meningitis Risk Assessment" data-ph="assets/images/projects/meningitis-risk-assessment.png"></div>
         </a>
       </div>
@@ -244,6 +250,32 @@
   <div class="fly-letter letter-paper" id="flyLetter" aria-hidden="true">
     <img class="letter-img" alt="">
     <span class="ph">assets/files/secret-file.pdf</span>
+  </div>
+
+  <!-- Project slides viewer -->
+  <div class="deck" id="deck" role="dialog" aria-modal="true" aria-labelledby="deckTitle" hidden>
+    <div class="deck-backdrop" data-close></div>
+    <div class="deck-box">
+      <div class="deck-head">
+        <h2 class="deck-title" id="deckTitle"></h2>
+        <button class="deck-close" type="button" data-close aria-label="Close slides">&times;</button>
+      </div>
+      <div class="deck-frame" id="deckFrame">
+        <div class="deck-track" id="deckTrack"></div>
+      </div>
+      <div class="deck-ctrl">
+        <button class="deck-btn deck-prev" type="button" aria-label="Previous slide">&lt;</button>
+        <div class="deck-dots" id="deckDots"></div>
+        <button class="deck-btn deck-next" type="button" aria-label="Next slide">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollbar (stitched thread) -->
+  <div class="sb" id="sb" aria-hidden="true">
+    <div class="sb-line"></div>
+    <div class="sb-sewn" id="sbSewn"></div>
+    <div class="sb-thumb" id="sbThumb"></div>
   </div>
 
 </body>
